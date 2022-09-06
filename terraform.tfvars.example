@@ -1,0 +1,25 @@
+cloudflare_zone_id = "insert id here"
+aws_zone_id        = "insert id here"
+
+dns_records = {
+
+  a-record = {
+    name  = "sample",
+    type  = "A",
+    value = "10.0.0.1",
+    ttl   = "3600"
+  },
+  txt-record = {
+    name  = "sample-txt",
+    type  = "TXT",
+    value = "Hello World",
+    ttl   = "3600"
+  },
+  cname-record = {
+    name  = "sample-cname",
+    type  = "CNAME",
+    value = "sample.theitcrowd.cf",
+    ttl   = "3600"
+  }
+
+}
